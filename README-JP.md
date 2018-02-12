@@ -1,5 +1,6 @@
 # AutoTSSSaver
 SHSH2の発行状態を自動的にチェックし、変更が検知された際に保存するスクリプトです。
+tsschecker_linuxファイルをMac版に置き換えると、Macでも利用できます。
 
 ## 使い方
 
@@ -11,7 +12,10 @@ sudo apt-get install python-pip
 sudo pip3 install requests
 sudo pip3 install dataset
 sudo pip install mdfmonitor
+```
 
+Linuxの場合以下のコマンドも実行してください。
+```
 mkdir .src
 cd .src
 git clone https://github.com/tihmstar/libirecovery && cd ./libirecovery && bash autogen.sh && sudo make install
