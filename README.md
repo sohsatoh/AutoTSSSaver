@@ -1,5 +1,10 @@
 # AutoTSSSaver
 Automatically detect the change of tss server and save blobs.
+
+You can run it on Linux and Mac.
+
+[Download Tsschecker for mac here](https://github.com/encounter/tsschecker/releases)
+
 [日本語版の説明はこちら](https://github.com/sohsatoh/AutoTSSSaver/blob/master/README-JP.md)
 
 ## How to use
