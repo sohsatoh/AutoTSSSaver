@@ -11,6 +11,14 @@ sudo apt-get install python-pip
 sudo pip3 install requests
 sudo pip3 install dataset
 sudo pip install mdfmonitor
+
+mkdir .src
+cd .src
+git clone https://github.com/tihmstar/libirecovery && cd ./libirecovery && bash autogen.sh && sudo make install
+git clone https://github.com/tihmstar/libcrippy && cd ./libcrippy && bash autogen.sh && sudo make install
+git clone https://github.com/tihmstar/libfragmentzip && cd ./libfragmentzip && sudo bash autogen.sh && sudo make install
+git clone https://github.com/tihmstar/libpartialzip && cd ./libpartialzip && sudo bash autogen.sh && sudo make install
+git clone https://github.com/libimobiledevice/libplist.git && cd ./libpartialzip && sudo bash autogen.sh && sudo make install
 ```
 
 (python3やpip3のインストールを済ませておいてください。）
