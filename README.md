@@ -1,7 +1,18 @@
 # AutoTSSSaver
 Automatically detect the change of tss server and save blobs.
 
-## How to use?
+## How to use
+
+**0. Install Dependencies**
+
+```
+sudo apt-get install libssl-dev
+sudo apt-get install python-pip
+sudo pip3 install requests
+sudo pip3 install dataset
+sudo pip install mdfmonitor
+```
+
 **1. Edit devices.ini**
 
 First, you have to write device's information to devices.ini.
