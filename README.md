@@ -49,6 +49,8 @@ You have to provide a path to folder like this.
 os.system('cd <PATH TO AUTOTSSSAVER>;python3 autotss.py -p <PATH TO TSSCHECKER>')
 ```
 
+As testrun, please execute the command inside '' on Terminal.
+
 **3. Run autorun.py**
 
 Open terminal, and run autorun.py by python (not python3).
