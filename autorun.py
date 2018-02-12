@@ -19,4 +19,4 @@ for mdf in monitor.monitor():
     print "Catch the Modification!!"
     print "Old timestamp: %s" % mdf.old_dtime
     print "New timestamp: %s" % mdf.new_dtime
-    os.system('cd ~/backup/shsh/autotss;python3 autotss.py -p /home/pi/backup/shsh/autotss/tsschecker_linux')
+    os.system('cd /home/pi/AutoTSSSaver;python3 autotss.py -p /home/pi/AutoTSSSaver/tsschecker_linux')
