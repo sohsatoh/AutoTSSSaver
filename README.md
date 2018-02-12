@@ -1,5 +1,6 @@
 # AutoTSSSaver
 Automatically detect the change of tss server and save blobs.
+[日本語版の説明はこちら](https://github.com/sohsatoh/AutoTSSSaver/blob/master/README-JP.md)
 
 ## How to use
 
