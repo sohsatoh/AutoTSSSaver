@@ -1,6 +1,8 @@
 # AutoTSSSaver
 SHSH2の発行状態を自動的にチェックし、変更が検知された際に保存するスクリプトです。
+
 tsschecker_linuxファイルをMac版に置き換えると、Macでも利用できます。
+
 Mac版tsscheckerは[こちら](https://github.com/encounter/tsschecker/releases)。
 
 ## 使い方
