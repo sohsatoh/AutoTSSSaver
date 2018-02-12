@@ -50,6 +50,9 @@ os.system('cd /home/pi/AutoTSSSaver;python3 autotss.py -p /home/pi/AutoTSSSaver/
 os.system('cd <AutoTSSSaverフォルダへのパス>;python3 autotss.py -p <tsscheckerへのパス>')
 ```
 
+テストランとして、''で囲まれている部分をTerminalで実行してください。
+
+
 **3. autorun.pyの実行**
 
 python3ではなく、pythonでautorun.pyを実行してください。
