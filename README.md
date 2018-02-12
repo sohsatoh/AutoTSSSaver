@@ -61,3 +61,7 @@ I highly recommend to run autorun.py by cron.
 ## Thanks
 [autotss](https://github.com/codsane/autotss) by codsane
 (I just add some files to check tss saver automatically)
+
+## Todo
+- rewrite autorun.py for python3
+(I know it is insane to use python and python3 at the same time lol)
