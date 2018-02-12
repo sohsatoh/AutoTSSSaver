@@ -1,9 +1,9 @@
 # AutoTSSSaver
-Automatically detect the change of tss server and save blobs.
+SHSH2の発行状態を自動的にチェックし、変更が検知された際に保存するスクリプトです。
 
-## How to use
+## 使い方
 
-**0. Install Dependencies**
+**0. 依存パッケージのインストール**
 
 ```
 sudo apt-get install libssl-dev
@@ -13,11 +13,13 @@ sudo pip3 install dataset
 sudo pip install mdfmonitor
 ```
 
-**1. Edit devices.ini**
+(python3やpip3のインストールを済ませておいてください。）
 
-First, you have to write device's information to devices.ini.
+**1. devices.iniの編集**
 
-This is example:
+devices.iniにデバイス情報を記載します。
+
+以下例
 
 ```
 [Soh's iPhone X]
@@ -32,36 +34,40 @@ boardconfig = j207ap
 ```
 
 
-**2. Edit autorun.py**
+**2. autorun.pyの編集**
 
-At the end of autorun.py, there is such a line.
+autorun.pyの最下部に以下のような行があります。
 
 ```
 ~
 os.system('cd /home/pi/AutoTSSSaver;python3 autotss.py -p /home/pi/AutoTSSSaver/tsschecker_linux')
 ```
 
-You have to provide a path to folder like this.
+ファイルを編集し、AutoTSSSaverへのパスを記載してください。
 
 ```
 ~
-os.system('cd <PATH TO AUTOTSSSAVER>;python3 autotss.py -p <PATH TO TSSCHECKER>')
+os.system('cd <AutoTSSSaverフォルダへのパス>;python3 autotss.py -p <tsscheckerへのパス>')
 ```
 
-**3. Run autorun.py**
+**3. autorun.pyの実行**
 
-Open terminal, and run autorun.py by python (not python3).
+python3ではなく、pythonでautorun.pyを実行してください。
 
 
-**4. (Optional) Run it by cron**
-I highly recommend to run autorun.py by cron.
+**4. (オプション) cronで再起動時に自動実行**
+cronを使用し、再起動後に自動でスクリプトを常駐させます。
+こちらはオプションですが、最も重要な設定でもあります。
+crontab -eで編集画面に入り、
 
 ```
 @reboot python <PATH TO AUTORUN.PY>
 ```
 
+を記載してください。
 
-## Dependencies
+
+## 依存パッケージ
 - python
 - python3
 - requests
@@ -73,6 +79,6 @@ I highly recommend to run autorun.py by cron.
 [autotss](https://github.com/codsane/autotss) by codsane
 (I just add some files to check tss saver automatically)
 
-## Todo
-- rewrite autorun.py for python3
-(I know it is insane to use python and python3 at the same time lol)
+## やること
+- autorun.pyをpython3用に書き換え
+（現段階では必要なファイルを集めただけで、ほぼ私が書いたスクリプトはありません）
