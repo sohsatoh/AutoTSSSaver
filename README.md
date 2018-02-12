@@ -12,8 +12,11 @@ sudo apt-get install python-pip
 sudo pip3 install requests
 sudo pip3 install dataset
 sudo pip install mdfmonitor
+```
 
-↓If your machine is linux, you also have to run this command
+↓If your machine is linux, you may also have to run this command.
+
+```
 mkdir .src
 cd .src
 git clone https://github.com/tihmstar/libirecovery && cd ./libirecovery && bash autogen.sh && sudo make install
