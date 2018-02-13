@@ -9,6 +9,8 @@ Mac版tsscheckerは[こちら](https://github.com/encounter/tsschecker/releases)
 
 **0. 依存パッケージのインストール**
 
+下記手順を踏んで、tsschecker_linuxが実行出来ない場合、ご自身でコンパイルされることをおすすめします。
+
 ```
 sudo apt-get install libssl-dev
 sudo apt-get install python-pip
