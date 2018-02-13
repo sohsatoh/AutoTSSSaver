@@ -11,6 +11,8 @@ You can run it on Linux and Mac.
 
 **0. Install Dependencies**
 
+<font color="Red">If tsschecker for Linux does not work properly, please compile it yourself.</font>
+
 ```
 sudo apt-get install libssl-dev
 sudo apt-get install python-pip
